@@ -34,7 +34,7 @@
         cursor: pointer;
     }
     .gradient {
-        background-image: linear-gradient(45deg, rgb(129, 207, 245, 0.46), rgb(213, 250, 254, 0.5)), url("../../assets/gambar.jpg");
+        background-image: linear-gradient(45deg, rgba(129, 207, 245, 0.46), rgba(213, 250, 254, 0.5)), url("../../assets/gambar.jpg");
     }
 </style>
 

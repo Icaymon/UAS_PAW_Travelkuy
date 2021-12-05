@@ -1,7 +1,7 @@
 <template>
     <v-main class="body gradient">
         <div>
-            <v-app-bar style="background-color: rgba(255, 255, 255, 0.8)">
+            <v-app-bar app fixed style="background-color: rgba(255, 255, 255, 0.8)">
                 <v-toolbar-title class="mark" plain @click="goHome()">Travelskuy</v-toolbar-title>
                 <v-spacer></v-spacer>
                 
