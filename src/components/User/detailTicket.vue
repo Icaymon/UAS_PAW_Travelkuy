@@ -1,6 +1,6 @@
 <template>
   <v-main>
-    <v-card class="container" v-bind:style="{'padding' : '0px'}" style="margin-top: -100px">
+    <v-card class="container" v-bind:style="{'padding' : '0px'}">
     <div>
       <img src="../../assets/wisata.jpg" alt="labuan bajo" style="width: 100%" />
       <div class="details" style="text-align: left">

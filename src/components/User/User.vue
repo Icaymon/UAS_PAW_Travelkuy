@@ -1,7 +1,7 @@
 <template>
     <v-main class="body gradient">
         <div>
-            <v-app-bar app fixed class="blue lighten-4">
+            <v-app-bar style="background-color: rgba(255, 255, 255, 0.8)">
                 <v-toolbar-title class="mark" plain @click="goHome()">Travelskuy</v-toolbar-title>
                 <v-spacer></v-spacer>
                 
@@ -35,7 +35,8 @@
 
     .mark:hover {
         background-color: #c5e8fc;
-        cursor: pointer;
+        cursor:
+         pointer;
     }
 
     .gradient {

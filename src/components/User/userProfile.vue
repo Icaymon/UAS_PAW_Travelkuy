@@ -1,6 +1,6 @@
 <template>
     <v-main>
-        <h1 class="center-text textsize" v-bind:style="{'margin' : '0 30px'}">Start Your Journey</h1>
+        <h1 class="center-text textsize" v-bind:style="{'margin-top' : '125px'}">Start Your Journey</h1>
         <v-btn v-bind:style="{'background-color' : '#3cff50'}" @click="goBuyTickets()">
             Buy Tickets
         </v-btn>
