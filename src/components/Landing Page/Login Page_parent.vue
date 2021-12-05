@@ -1,5 +1,5 @@
 <template>
-    <v-main class="body">
+    <v-main class="body gradient">
         <div>
             <v-app-bar app fixed class="blue lighten-4">
                 <v-toolbar-title class="mark" plain @click="goHome()">Travelskuy</v-toolbar-title>
@@ -32,6 +32,9 @@
     .mark:hover {
         background-color: #dff2fd;
         cursor: pointer;
+    }
+    .gradient {
+        background-image: linear-gradient(45deg, rgb(129, 207, 245, 0.46), rgb(213, 250, 254, 0.5)), url("../../assets/gambar.jpg");
     }
 </style>
 
