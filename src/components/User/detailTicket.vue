@@ -14,8 +14,8 @@
         </v-card-subtitle>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn class="button" color="blue">Update Ticket</v-btn>
-          <v-btn class="button" color="red">Delete Ticket</v-btn>
+          <v-btn class="button" color="blue">Update Ticket <v-icon>mdi-arrow-up-bold</v-icon></v-btn>
+          <v-btn class="button" color="red">Delete Ticket <v-icon>mdi-delete</v-icon></v-btn>
           <v-spacer></v-spacer>
         </v-card-actions>
       </div>

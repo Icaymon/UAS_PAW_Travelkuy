@@ -6,11 +6,11 @@
                 <v-spacer></v-spacer>
                 
                 <v-btn class="mark" plain @click="goMyTickets()">
-                    My Tickets
+                    My Tickets <v-icon>mdi-ticket</v-icon>
                 </v-btn>
 
                 <v-btn class="mark" plain @click="goBuyTickets()">
-                    Buy Tickets
+                    Buy Tickets <v-icon>mdi-airplane</v-icon>
                 </v-btn>
 
                 <v-btn class="mark" plain @click="goProfileUser()">
