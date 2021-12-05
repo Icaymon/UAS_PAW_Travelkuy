@@ -1,0 +1,61 @@
+<template>
+    <v-main class="body">
+        <div>
+            <v-app-bar app fixed class="blue lighten-4">
+                <v-toolbar-title >Travelskuy</v-toolbar-title>
+                <v-spacer></v-spacer>
+                
+                <v-btn class="mark" plain @click="goMyTickets()">
+                    My Tickets
+                </v-btn>
+
+                <v-btn class="mark" plain @click="goBuyTickets()">
+                    Buy Tickets
+                </v-btn>
+
+                <v-btn class="mark" plain @click="goProfileUser()">
+                    Welcome, User <v-icon>mdi-account</v-icon>
+                </v-btn>
+            </v-app-bar>
+            <div class="fullheight pa-5">
+                <router-view></router-view>
+            </div>
+        </div>
+    </v-main>
+</template>
+
+<style>
+    .body{
+        background-image: url("../../assets/Untitled.jpg");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding: 9%;
+    }
+
+    .mark:hover {
+        background-color: #c5e8fc;
+    }
+</style>
+
+<script>
+export default {
+    methods:{
+        goMyTickets(){
+            this.$router.push({
+                name: "MyTickets",
+            });
+        },
+        goBuyTickets(){
+            this.$router.push({
+                name: "BuyTickets",
+            });
+        },
+        goProfileUser(){
+            this.$router.push({
+                name: "ProfileUser",
+            });
+        },
+    }
+}
+</script>
