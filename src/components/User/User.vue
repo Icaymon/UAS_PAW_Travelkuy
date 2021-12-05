@@ -2,7 +2,7 @@
     <v-main class="body">
         <div>
             <v-app-bar app fixed class="blue lighten-4">
-                <v-toolbar-title >Travelskuy</v-toolbar-title>
+                <v-toolbar-title class="mark" plain @click="goHome()">Travelskuy</v-toolbar-title>
                 <v-spacer></v-spacer>
                 
                 <v-btn class="mark" plain @click="goMyTickets()">
@@ -35,6 +35,7 @@
 
     .mark:hover {
         background-color: #c5e8fc;
+        cursor: pointer;
     }
 </style>
 
@@ -54,6 +55,11 @@ export default {
         goProfileUser(){
             this.$router.push({
                 name: "ProfileUser",
+            });
+        },
+        goHome(){
+            this.$router.push({
+                name: "userProfile",
             });
         },
     }
