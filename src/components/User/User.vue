@@ -59,12 +59,12 @@ export default {
         },
         goProfileUser(){
             this.$router.push({
-                name: "ProfileUser",
+                name: "userProfile",
             });
         },
         goHome(){
             this.$router.push({
-                name: "userProfile",
+                name: "userDashboard",
             });
         },
     }

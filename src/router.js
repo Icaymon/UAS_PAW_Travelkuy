@@ -10,7 +10,7 @@ function importComponent(path){
 const router = new VueRouter({
     mode:'history',
     routes:[
-        //landnig page
+        //landing page
         {
             path: '/',
             name: 'Login Page',
@@ -26,35 +26,53 @@ const router = new VueRouter({
                 {
                     path: '/SignIn',
                     name: 'SignIn',
-                    meta: { title: 'SignIn' },
+                    meta: { title: 'Sign In' },
                     component: importComponent('Landing Page/SignIn'),
                 },
                 {
                     path: '/SignUp',
                     name: 'SignUp',
-                    meta: { title: 'SignUp' },
+                    meta: { title: 'Sign Up' },
                     component: importComponent('Landing Page/SignUp'),
                 },
             ],
         },
         //admin
         {
-            path: '/admin',
-            name: 'admin',
-            meta: { title: 'admin' },
+            path: '/Admin',
+            name: 'Admin',
+            meta: { title: 'Admin' },
             component: importComponent('Admin/Admin'),
             children: [
                 {
+                    path: '/adminDashboard',
+                    name: 'adminDashboard',
+                    meta: { title: 'Dashboard Admin' },
+                    component: importComponent('Admin/adminDashboard'),
+                },
+                {
                     path: '/adminProfile',
                     name: 'adminProfile',
-                    meta: { title: 'adminProfile' },
+                    meta: { title: 'Profile Admin' },
                     component: importComponent('Admin/adminProfile'),
                 },
                 {
                     path: '/viewTickets',
                     name: 'viewTickets',
-                    meta: { title: 'viewTickets' },
+                    meta: { title: 'View Tickets' },
                     component: importComponent('Admin/viewTickets'),
+                },
+                {
+                    path: '/editTickets',
+                    name: 'editTickets',
+                    meta: { title: 'Edit Tickets' },
+                    component: importComponent('Admin/editTickets'),
+                },
+                {
+                    path: '/addTickets',
+                    name: 'addTickets',
+                    meta: { title: 'Add Tickets' },
+                    component: importComponent('Admin/addTickets'),
                 },
             ],
         },
@@ -65,6 +83,12 @@ const router = new VueRouter({
             meta: { title: 'User' },
             component: importComponent('User/User'),
             children: [
+                {
+                    path: '/userDashboard',
+                    name: 'userDashboard',
+                    meta: { title: 'Dashboard User' },
+                    component: importComponent('User/userDashboard'),
+                },
                 {
                     path: '/userProfile',
                     name: 'userProfile',
